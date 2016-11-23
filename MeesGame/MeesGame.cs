@@ -17,21 +17,21 @@ namespace MeesGame
         {
             Content.RootDirectory = "Content";
         }
-        
+
         protected override void LoadContent()
         {
             base.LoadContent();
             screen = new Point(1440, 825);
             windowSize = new Point(1024, 586);
             FullScreen = false;
-            /* uncomment to add gamestates
+            // uncomment to add gamestates
             gameStateManager.AddGameState("titleMenu", new TitleMenuState());
-            gameStateManager.AddGameState("helpState", new HelpState());
+            // gameStateManager.AddGameState("helpState", new HelpState());
             gameStateManager.AddGameState("playingState", new PlayingState(Content));
             gameStateManager.AddGameState("levelMenu", new LevelMenuState());
-            gameStateManager.AddGameState("gameOverState", new GameOverState());
-            gameStateManager.AddGameState("levelFinishedState", new LevelFinishedState());
-            gameStateManager.SwitchTo("titleMenu");//*/
+            // gameStateManager.AddGameState("gameOverState", new GameOverState());
+            // gameStateManager.AddGameState("levelFinishedState", new LevelFinishedState());
+            gameStateManager.SwitchTo("titleMenu");
         }
     }
 }
